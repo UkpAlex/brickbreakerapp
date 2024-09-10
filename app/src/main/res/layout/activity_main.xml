@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#FFF8E1">
+
+        <!-- Game Title -->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/brick_breaker"
+            android:textSize="30sp"
+            android:textColor="#755B5B"
+            android:fontFamily="@font/hand_drawn_font"
+            android:gravity="center"
+            android:layout_marginTop="20dp"/>
+
+        <!-- Ball Image in the center -->
+        <ImageView
+            android:id="@+id/ball_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="TODO"
+            android:src="@drawable/ball_drawable"
+            android:layout_marginTop="20dp"
+            tools:ignore="ContentDescription,HardcodedText" />
+
+        <!-- High Score Display -->
+        <TextView
+            android:id="@+id/high_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="High Score: 0"
+            android:textSize="20sp"
+            android:textColor="#755B5B"
+            android:fontFamily="@font/hand_drawn_font"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            tools:ignore="HardcodedText" />
+
+        <!-- Play Button -->
+        <Button
+            android:id="@+id/play_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#F48FB1"
+            android:fontFamily="@font/hand_drawn_font"
+            android:text="@string/play"
+            android:textColor="#424242"
+            android:textSize="18sp" />
+
+        <!-- Exit Button -->
+        <Button
+            android:id="@+id/exit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#81D4FA"
+            android:fontFamily="@font/hand_drawn_font"
+            android:text="@string/exit"
+            android:textColor="#6D4C41"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

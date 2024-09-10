@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFF8E1">
+
+        <!-- Score Display at the top -->
+        <TextView
+            android:id="@+id/score_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score: 0"
+            android:textSize="20sp"
+            android:textColor="#755B5B"
+            android:fontFamily="@font/hand_drawn_font"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true" />
+
+        <!-- Game SurfaceView (for drawing the game elements) -->
+        <SurfaceView
+            android:id="@+id/game_surface"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/score_text"
+            android:layout_above="@+id/paddle" />
+
+        <!-- Paddle -->
+        <View
+            android:id="@+id/paddle"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:background="#F48FB1"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Ball -->
+        <ImageView
+            android:id="@+id/ball"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ball_drawable"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
