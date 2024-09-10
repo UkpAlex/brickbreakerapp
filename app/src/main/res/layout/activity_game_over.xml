@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF4E2">
+
+    <ImageView
+        android:id="@+id/trophy_image"
+        android:layout_width="162dp"
+        android:layout_height="180dp"
+        android:contentDescription="Trophy Image"
+        android:src="@drawable/trophy_image" />
+
+    <TextView
+        android:id="@+id/score_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score: X"
+        android:fontFamily="@font/hand_drawn_font"
+        android:textColor="#554747"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/high_score_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/hand_drawn_font"
+        android:text="High Score: XX"
+        android:textColor="#554747"
+        android:textSize="24sp"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/retry_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Try Again"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/hand_drawn_font"
+        android:backgroundTint="#F4BFB1"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/exit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/hand_drawn_font"
+        android:text="Exit"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#B4DCE3"
+        android:textColor="#FFFFFF"/>
+</LinearLayout>
